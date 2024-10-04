@@ -1,0 +1,13 @@
+#q11-title {
+	display: inline-block;
+	animation: rotating360 3s linear infinite;
+}
+
+@keyframes rotating360 {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
