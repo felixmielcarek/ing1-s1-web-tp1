@@ -35,7 +35,7 @@
 		<p>Pour éviter de surcharger le dessin inutilement, les dernières balises sont représentées en pointillés. Ce sont les balises &lt;h3&gt; et &lt;p&gt; associés au questions/réponses de la question Q3 à Q8 (pour la question Q8 la balise &lt;p&gt; est remplacée par la balise &lt;a&gt;).</p>
 
 		<h3>Q10</h3>
-		<img src="img-tmp.jpg" alt="Image de chat regardant au loin" width="200"/>
+		<img id="tree-image" src="mon-arbre-a-moi.jpg" alt="Représentation de l'arbre des balises html." width="400"/>
 
 		<div><h3 id="q11-title">Q11</h3></div>
 
@@ -44,9 +44,90 @@
 		<p>Le nom de la machine est : monge</p>
 		<p>Le nom de domaine est : univ-mlv.fr</p>
 
-		<h3>Q2</h3>
-		<p>La première ligne du résultat de la commande host indique l'adresse IP associée au nom de domaine spécifié.</p>
-		<p>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+		<h3>Q2</h3>	
+		<p class="term-io">$ host monge.univ-mlv.fr <br/>
+		monge.univ-mlv.fr has address 193.55.61.150 <br/>
+monge.univ-mlv.fr mail is handled by 10 monge.univ-mlv.fr.</p>
+
+		<p>La première ligne du résultat de la commande host indique l'adresse IP de la machine associée au nom de domaine spécifié.</p>
+		<p>La deuxième ligne indique la machine qui héberge le serveur de mail du nom de domaine spécifié, l'indice de priorité est aussi spécifié en cas de plusieurs serveurs.</p>
+
+		<h3>Q3</h3>	
+		<p>L'ajout de nom de domaines à plusieurs intérêts :</p>
+		<ol><li>Cela est plus facile à utiliser pour les humains, retenir et manipuler un nom de domaine est plus simple qu'une suite de chiffre.</li>
+			<li>Cela permet d'abstraire les potentiels modifications de l'infrastructure du serveur. Par exemple si on change l'adresse IP de la machine hébergeant le site et qu'on met bien à jour la modification pour le DNS, l'utilisateur ne s'en rendra même pas compte.</li>
+			<li>Cela permet à l'infrastructure du serveur d'associer plusieurs adresse IP derrière un nom de domaine afin d'utiliser un serveur plus proche géographiquement de l'utilisateur ou pour anticiper des pannes d'un des serveurs.</li></ol>
+
+		<h3>Q4</h3>	
+		<p class="term-io">$ host forax.github.io                 
+		forax.github.io has address 185.199.108.153 <br/>
+forax.github.io has address 185.199.109.153<br/>
+forax.github.io has address 185.199.110.153<br/>
+forax.github.io has address 185.199.111.153<br/>
+forax.github.io has IPv6 address 2606:50c0:8001::153<br/>
+forax.github.io has IPv6 address 2606:50c0:8003::153<br/>
+forax.github.io has IPv6 address 2606:50c0:8002::153<br/>
+forax.github.io has IPv6 address 2606:50c0:8000::153<br/></p>
+
+		<p>Les adresses IP de la commande précédente sont celles des machines hébergeant la page Github que l'on recherche. Cependant, la contacter directement ne fonctionne pas car ces machines hébergent plusieurs sites web, il faut donc spécifier explicitement dans la requête le Host que l'on cherche à atteindre.</p>
+
+		<h3>Q5</h3>
+		<p>Pour information, le réseau de l'école ne fonctionnant pas durant le TP, ces questions ont été faites depuis un autre accès internet que celui des salles informatiques.</p>
+		<p class="term-io">$ traceroute forax.github.io<br/>
+traceroute to forax.github.io (185.199.109.153), 30 hops max, 60 byte packets<br/>
+ 1  _gateway (192.168.216.1)  35.739 ms  50.063 ms  35.652 ms<br/>
+ 2  147.215.200.1 (147.215.200.1)  65.093 ms  49.954 ms *<br/>
+ 3  177.206.174.79.rev.sfr.net (79.174.206.177)  76.077 ms  75.135 ms  64.901 ms<br/>
+ 4  108.97.30.212.rev.sfr.net (212.30.97.108)  108.507 ms  125.167 m<br/>
+s  125.146 ms<br/>
+ 5  73.212.192.77.rev.sfr.net (77.192.212.73)  80.542 ms  80.517 ms 77.212.192.77.rev.sfr.net (77.192.212.77)  94.459 ms<br/>
+ 6  * * *<br/>
+ 7  * * *<br/>
+ 8  * * *<br/>
+ 9  * * *<br/>
+10  * * *<br/>
+11  * * *<br/>
+12  * * *<br/>
+13  * * *<br/>
+14  * * *<br/>
+15  * * *<br/>
+16  * * *<br/>
+17  * * *<br/>
+18  * * *<br/>
+19  * * *<br/>
+20  * * *<br/>
+21  * * *<br/>
+22  * * *<br/>
+23  * * *<br/>
+24  * * *<br/>
+25  * * *<br/>
+26  * * *<br/>
+27  * * *<br/>
+28  * * *<br/>
+29  * * *<br/>
+30  * * *</p>
+
+		<p>La commande affiche les différents routeurs traversés pour atteindre le serveur destination.</p>
+		<p>Le nom du routeur de sortie est _gateway, par son adresse IP on peut déduire que c'est l'interface réseau privée de l'appareil permettant la connexion internet de mon oridnateur. Cette déduction est faite car la commande permettant d'afficher mon adresse IP révèle que le sous-réseau est le même (192.168.216.X) :</p>
+		<p class="term-io">$ ip a<br/>                 
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000<br/>
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00<br/>
+    inet 127.0.0.1/8 scope host lo<br/>
+       valid_lft forever preferred_lft forever<br/>
+    inet6 ::1/128 scope host noprefixroute <br/>
+       valid_lft forever preferred_lft forever<br/>
+2: wlo1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000<br/>
+    link/ether 98:af:65:8a:9a:a8 brd ff:ff:ff:ff:ff:ff<br/>
+    altname wlp0s20f3<br/>
+    inet 192.168.216.68/21 brd 192.168.223.255 scope global dynamic noprefixroute wlo1<br/>
+       valid_lft 4437sec preferred_lft 4437sec<br/>
+    inet6 fe80::d190:3b36:eb0a:ce18/64 scope link noprefixroute <br/>
+    valid_lft forever preferred_lft forever<br/></p>
+		
+		<p>La commande indique qu'une partie du chemin se fait sur le réseau de SFR, on peut aussi voir que certains routeurs préfèrent rester masqué.</p>
+
+		<h3>Q6</h3>
+
 
 		<h2>Exercice : Service HTTP</h2>
 		<h3>Q1</h3>

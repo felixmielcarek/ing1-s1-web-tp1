@@ -1,3 +1,12 @@
+#tree-image {
+	transform: rotate(-90deg);
+}
+
+.term-io {
+	font-family: monospace;
+	background: lightgray;
+}
+
 #q11-title {
 	display: inline-block;
 	animation: rotating360 3s linear infinite;
