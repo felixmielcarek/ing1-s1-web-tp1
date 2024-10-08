@@ -1,3 +1,7 @@
+body {
+	padding-inline: 20%;
+	padding-block: 5em;
+}
 #tree-image {
 	transform: rotate(-90deg);
 }
@@ -19,4 +23,23 @@
 	to {
 		transform: rotate(360deg);
 	}
+}
+
+li, li > :first-child {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+li p {
+	font-size: medium;
+	font-weight: 100;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+  }
+
+td {
+	padding: 5px;
 }

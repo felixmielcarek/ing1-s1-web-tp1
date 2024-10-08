@@ -1,65 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<meta charset="utf-8">
 	<title>Compte-rendu TP1</title>
 	<link rel="stylesheet" href="tp1.css">
 </head>
 <body>
-       	<h1>Compte Rendu de TP1</h1>
-        <p>Félix MIELCAREK</p>
-        <h2>Exercice: Document de base</h2>
-        
-        <h3>Q2 : A quoi servent les tags h1, h2 et h3 ?</h3>
-	<p>Ces balises servent à créer des titres dans la page html. Les numéros indiquent l'importance du titre (h1 étant le titre le plus important).</p>
+	<table>
+		<tr>
+			<td></td>
+			<td>FELIX MIELCAREK</td>
+		</tr>
+		<tr>
+			<td>ESIEE INFO 1</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="2">TP1 de Programmation Web</td>
+		</tr>
+	</table>
+	
+	<h2>Exercice 1 : Document de base</h2>
+
+	<ol>
+	<li><p>Que manque-t-il comme information à la balise head pour que le fichier s'affiche correctement ?</p>
+		<p>Pour afficher les accents il faut ajouter dans le header la balise précisant l'encodage devant être utilisé (UTF-8).</p>
+	</li>
+	
+	<li><p>A quoi servent les tags h1, h2 et h3 ?</p>
+		<p>Ces balises servent à créer des titres dans la page html. Les numéros indiquent l'importance du titre (h1 étant le titre le plus important).</p>
+	</li>
         	
-	<h3>Q3 : A quoi sert le tag p ?</h3>
-	<p>La balise p sert à délimiter un paragraphe.</p>
+	<li><p>A quoi sert le tag p ?</p>
+		<p>La balise p sert à délimiter un paragraphe.</p>
+	</li>
 
-	<h3>Q4</h3>
-	<p>Les tags HTML commencent par une balise ouvrante &lt;foo&gt; et finissent par une balise fermante &lt;/foo&gt;</p>
+	<li><p></p><br/>
+		<p>Les tags HTML commencent par une balise ouvrante &lt;foo&gt; et finissent par une balise fermante &lt;/foo&gt;</p>
+	</li>
+	
 
-	<h3>Q5 : Comment mettre en <b>gras</b> ou en <i>italique</i> ?</h3>
-	<p>Le tag &lt;b&gt; permet de mettre en gras et le tag &lt;i&gt; permet de mettre en italique.<p>
+	<li><p>Comment mettre en <b>gras</b> ou en <i>italique</i> ?</p>
+		<p>Le tag &lt;b&gt; permet de mettre en gras et le tag &lt;i&gt; permet de mettre en italique.<p>
+	</li>
 
-	<h3>Q6 : Et comment faire pour mettre un mot à la fois en gras et en italique ?</h3>
-	<p>Il suffit de mettre les <b><i>2 balises</i></b> (en faisant attention de les refermer dans l'ordre inverse d'ouverture).<p>
+	<li><p>Et comment faire pour mettre un mot à la fois en gras et en italique ?</p>
+		<p>Il suffit de mettre les <b><i>2 balises</i></b> (en faisant attention de les refermer dans l'ordre inverse d'ouverture).<p>
+	</li>
 		
-	<h3>Q7 : On souhaite que le titre de la fenêtre du navigateur soit "Compte Rendu de TP1", comment faire ?</h3>
-	<p>Il faut inclure le tag &lt;title&gt; dans le tag &lt;head&gt;.<p>
+	<li><p>On souhaite que le titre de la fenêtre du navigateur soit "Compte Rendu de TP1", comment faire ?</p>
+		<p>Il faut inclure le tag &lt;title&gt; dans le tag &lt;head&gt;.<p>
+	</li>
 
-	<h3>Q8<h3>
-	<a href="http://monge.univ-mlv.fr/~forax/">Cours de programmation web.</a>
+	<li><p>Ajoutez un lien (le tag A) vers le cours avec comme titre cours de programmation web.</p>
+		<p><a href="http://monge.univ-mlv.fr/~forax/">Cours de programmation web.</a></p>
+	</li>
 
-	<h3>Q9</h3>
-	<p>Pour éviter de surcharger le dessin inutilement, les dernières balises sont représentées en pointillés. Ce sont les balises &lt;h3&gt; et &lt;p&gt; associés au questions/réponses de la question Q3 à Q8 (pour la question Q8 la balise &lt;p&gt; est remplacée par la balise &lt;a&gt;).</p>
+	<li><p>Prenez une feuille de papier puis dessinez l'arbre des différents tags correspondant à votre compte rendu.</p>
+		<p>Pour éviter de surcharger le dessin inutilement, les dernières balises sont représentées en pointillés. Ce sont les balises &lt;h3&gt; et &lt;p&gt; associés au questions/réponses de la question Q3 à Q8 (pour la question Q8 la balise &lt;p&gt; est remplacée par la balise &lt;a&gt;).</p>
+	</li>
 
-	<h3>Q10</h3>
-	<img id="tree-image" src="mon-arbre-a-moi.jpg" alt="Représentation de l'arbre des balises html." width="400"/>
+	<li><p>Utilisez ensuite le tag img pour inclure l'image dans votre compte rendu.</p>
+		<img id="tree-image" src="mon-arbre-a-moi.jpg" alt="Représentation de l'arbre des balises html." width="400"/>
+	</li>
 
-	<div><h3 id="q11-title">Q11</h3></div>
+	<li><p></p>
+		<div><h3 id="q11-title">Créer le fichier tp1.css></h3></div>
+	</li>
 
-        <h2>Exercice: URL</h2>
-	<h3>Q1</h3>
-	<p>Le nom de la machine est : monge</p>
-	<p>Le nom de domaine est : univ-mlv.fr</p>
+	</ol>
 
-	<h3>Q2</h3>	
-	<p class="term-io">$ host monge.univ-mlv.fr <br/>
+    <h2>Exercice 2 : URL</h2>
+	<ol>
+	<li><p>Quel est le nom de la machine à laquelle vous accédez ? Quel est le nom de domaine auquel vous accédez ?</p>
+		<p>Le nom de la machine est : monge</p>
+		<p>Le nom de domaine est : univ-mlv.fr</p>
+	</li>
+	
+
+	<li><p>À quoi correspond la première ligne de la réponse ? À quoi correspond la seconde ligne de la réponse ?</p>
+		<p class="term-io">$ host monge.univ-mlv.fr <br/>
 monge.univ-mlv.fr has address 193.55.61.150 <br/>
 monge.univ-mlv.fr mail is handled by 10 monge.univ-mlv.fr.</p>
 
-	<p>La première ligne du résultat de la commande host indique l'adresse IP de la machine associée au nom de domaine spécifié.</p>
-	<p>La deuxième ligne indique la machine qui héberge le serveur de mail du nom de domaine spécifié, l'indice de priorité est aussi spécifié en cas de plusieurs serveurs.</p>
+		<p>La première ligne du résultat de la commande host indique l'adresse IP de la machine associée au nom de domaine spécifié.</p>
+		<p>La deuxième ligne indique la machine qui héberge le serveur de mail du nom de domaine spécifié, l'indice de priorité est aussi spécifié en cas de plusieurs serveurs.</p>
+	</li>
 
-	<h3>Q3</h3>	
-	<p>L'ajout de nom de domaines à plusieurs intérêts :</p>
-	<ol><li>Cela est plus facile à utiliser pour les humains, retenir et manipuler un nom de domaine est plus simple qu'une suite de chiffre.</li>
-	<li>Cela permet d'abstraire les potentiels modifications de l'infrastructure du serveur. Par exemple si on change l'adresse IP de la machine hébergeant le site et qu'on met bien à jour la modification pour le DNS, l'utilisateur ne s'en rendra même pas compte.</li>
-	<li>Cela permet à l'infrastructure du serveur d'associer plusieurs adresse IP derrière un nom de domaine afin d'utiliser un serveur plus proche géographiquement de l'utilisateur ou pour anticiper des pannes d'un des serveurs.</li></ol>
+	<li><p>A votre avis, pourquoi utilise-t-on des noms pour les machines plutôt que des adresses IP ?</p>
+		<p>L'ajout de nom de domaines à plusieurs intérêts :</p>
+		<ul><li><p>Cela est plus facile à utiliser pour les humains, retenir et manipuler un nom de domaine est plus simple qu'une suite de chiffre.</p></li>
+		<li><p>Cela permet d'abstraire les potentiels modifications de l'infrastructure du serveur. Par exemple si on change l'adresse IP de la machine hébergeant le site et qu'on met bien à jour la modification pour le DNS, l'utilisateur ne s'en rendra même pas compte.</p></li>
+		<li><p>Cela permet à l'infrastructure du serveur d'associer plusieurs adresse IP derrière un nom de domaine afin d'utiliser un serveur plus proche géographiquement de l'utilisateur ou pour anticiper des pannes d'un des serveurs.</p></li></ul>
+	</li>	
 
-	<h3>Q4</h3>	
-	<p class="term-io">$ host forax.github.io                 
+	<li><p>Que se passe-t-il si on essaye d'accéder à la page du cours dans le browser en remplaçant le nom de la machine par l'adresse IP trouvée précédemment ?</p>
+		<p class="term-io">$ host forax.github.io                 
 forax.github.io has address 185.199.108.153 <br/>
 forax.github.io has address 185.199.109.153<br/>
 forax.github.io has address 185.199.110.153<br/>
@@ -68,12 +104,12 @@ forax.github.io has IPv6 address 2606:50c0:8001::153<br/>
 forax.github.io has IPv6 address 2606:50c0:8003::153<br/>
 forax.github.io has IPv6 address 2606:50c0:8002::153<br/>
 forax.github.io has IPv6 address 2606:50c0:8000::153<br/></p>
+		<p>Les adresses IP de la commande précédente sont celles des machines hébergeant la page Github que l'on recherche. Cependant, la contacter directement ne fonctionne pas car ces machines hébergent plusieurs sites web, il faut donc spécifier explicitement dans la requête le Host que l'on cherche à atteindre.</p>
+	</li>	
 
-	<p>Les adresses IP de la commande précédente sont celles des machines hébergeant la page Github que l'on recherche. Cependant, la contacter directement ne fonctionne pas car ces machines hébergent plusieurs sites web, il faut donc spécifier explicitement dans la requête le Host que l'on cherche à atteindre.</p>
-
-	<h3>Q5</h3>
-	<p>Pour information, le réseau de l'école ne fonctionnant pas durant le TP, ces questions ont été faites depuis un autre accès internet que celui des salles informatiques.</p>
-	<p class="term-io">$ traceroute forax.github.io<br/>
+	<li><p>Quel est le nom du routeur de sortie ? Comment s'appelle le réseau sur lequel est connectée l'université ? Quels sont les autres réseaux qui sont traversés ?</p>
+		<p>Pour information, le réseau de l'école ne fonctionnant pas durant le TP, ces questions ont été faites depuis un autre accès internet que celui des salles informatiques.</p>
+		<p class="term-io">$ traceroute forax.github.io<br/>
 traceroute to forax.github.io (185.199.109.153), 30 hops max, 60 byte packets<br/>
  1  _gateway (192.168.216.1)  35.739 ms  50.063 ms  35.652 ms<br/>
  2  147.215.200.1 (147.215.200.1)  65.093 ms  49.954 ms *<br/>
@@ -107,71 +143,80 @@ s  125.146 ms<br/>
 29  * * *<br/>
 30  * * *</p>
 
-	<p>La commande affiche les différents routeurs traversés pour atteindre le serveur destination.</p>
-	<p>Le nom du routeur de sortie est _gateway, par son adresse IP on peut déduire que c'est l'interface réseau privée de l'appareil permettant la connexion internet de mon oridnateur. Cette déduction est faite car la commande permettant d'afficher mon adresse IP révèle que le sous-réseau est le même (192.168.216.X) :</p>
-	<p class="term-io">$ ip a<br/>                 
-1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000<br/>
+		<p>La commande affiche les différents routeurs traversés pour atteindre le serveur destination.</p>
+		<p>Le nom du routeur de sortie est _gateway, par son adresse IP on peut déduire que c'est l'interface réseau privée de l'appareil permettant la connexion internet de mon oridnateur. Cette déduction est faite car la commande permettant d'afficher mon adresse IP révèle que le sous-réseau est le même (192.168.216.X) :</p>
+		<p class="term-io">$ ip a<br/>                 
+1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000<br/>
 link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00<br/>
 inet 127.0.0.1/8 scope host lo<br/>
 valid_lft forever preferred_lft forever<br/>
 inet6 ::1/128 scope host noprefixroute <br/>
 valid_lft forever preferred_lft forever<br/>
-2: wlo1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000<br/>
+2: wlo1: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc noqueue state UP group default qlen 1000<br/>
 link/ether 98:af:65:8a:9a:a8 brd ff:ff:ff:ff:ff:ff<br/>
 altname wlp0s20f3<br/>
 inet 192.168.216.68/21 brd 192.168.223.255 scope global dynamic noprefixroute wlo1<br/>
 valid_lft 4437sec preferred_lft 4437sec<br/>
 inet6 fe80::d190:3b36:eb0a:ce18/64 scope link noprefixroute <br/>
 valid_lft forever preferred_lft forever<br/></p>
-		
-	<p>La commande indique qu'une partie du chemin se fait sur le réseau de SFR, on peut aussi voir que certains routeurs préfèrent rester masqué.</p>
+		<p>La commande indique qu'une partie du chemin se fait sur le réseau de SFR, on peut aussi voir que certains routeurs préfèrent rester masqué.</p>
+	</li>
 
-	<h3>Q6</h3>
-	<p>La commande host affiche :</p>
-	<p class="term-io">$ host www.mai-ko.com<br/>        
+	<li><p>Quel est le nom de la machine hébergeant le site Web ? Quel est le nom de domaine associé à cette machine ? Trouvez quelle est la ville de l'hébergeur de cette organisation.</p>
+		<p>La commande host affiche :</p>
+		<p class="term-io">$ host www.mai-ko.com<br/>        
 www.mai-ko.com is an alias for root.mai-ko.link.<br/>
 root.mai-ko.link has address 35.79.179.94<br/>
 root.mai-ko.link has address 18.182.75.64<br/>
 root.mai-ko.link mail is handled by 10 sv2237.xserver.jp.</p>
-	<p>On en déduit donc que le nom de la machine hébergeant le site web est root et que le nom de domaine associé est mai-ko.link.</p>
-	<p>La commande whois ne semble pas pouvoir afficher la ville de l'hébergeur car celui-ci a masqué ces informations :</p>
-	<p class="term-io">$ whois mai-ko.link | grep City<br/>
+		<p>On en déduit donc que le nom de la machine hébergeant le site web est root et que le nom de domaine associé est mai-ko.link.</p>
+		<p>La commande whois ne semble pas pouvoir afficher la ville de l'hébergeur car celui-ci a masqué ces informations :</p>
+		<p class="term-io">$ whois mai-ko.link | grep City<br/>
 Registrant City: REDACTED FOR PRIVACY<br/>
 Admin City: REDACTED FOR PRIVACY<br/>
 Tech City: REDACTED FOR PRIVACY<br/>
 Billing City: REDACTED FOR PRIVACY</p>
+	</li>
+	</ol>
 
-	<h2>Exercice : Service HTTP</h2>
-	<h3>Q1</h3>
-	<p>Le fichier /etc/services contient la liste des services du réseau Internet. Plus précisément, pour chaque service on retrouve le port de communication associé sur la machine, le protocole de transport (couche réseau du modèle OSI) associé et les alias pouvant exister.</p>
+	<h2>Exercice 3 : Service HTTP</h2>
+	<ol>
+	<li><p>On cherche à savoir à quoi correspond le fichier /etc/services.</p>
+		<p>Le fichier /etc/services contient la liste des services du réseau Internet. Plus précisément, pour chaque service on retrouve le port de communication associé sur la machine, le protocole de transport (couche réseau du modèle OSI) associé et les alias pouvant exister.</p>
+	</li>
 
-	<h3>Q2</h3>
-	<p>Pour trouver le port TCP pour le service on peut utiliser la commande suivante :</p>
-	<p class="term-io">$ cat /etc/services | egrep '^http\s.*tcp'<br/>
-http               80/tcp</p>
-	<p>C'est le port 80.</p>
+	<li><p>Utilisez la commande grep sur le fichier /etc/services pour déterminer le numéro du port TCP correspondant au service http.</p>
+		<p>Pour trouver le port TCP pour le service on peut utiliser la commande suivante :</p>
+		<p class="term-io">$ cat /etc/services | egrep '^http\s.*tcp'<br/>
+	http               80/tcp</p>
+		<p>C'est le port 80.</p>
+	</li>
 
-	<h3>Q3</h3>
-	<p>En essayant de se connecter avec netcat au serveur web de www.example.com, voici l'entête de réponse que l'on obtient :</p>
-	<p class="term-io">HTTP/1.0 404 Not Found<br/>
+	<li><p>Quel est le header de la réponse ?</p>
+		<p>En essayant de se connecter avec netcat au serveur web de www.example.com, voici l'entête de réponse que l'on obtient :</p>
+		<p class="term-io">HTTP/1.0 404 Not Found<br/>
 Content-Type: text/html<br/>
 Date: Tue, 08 Oct 2024 15:24:35 GMT<br/>
 Server: ECAcc (dcd/7D26)<br/>
 Content-Length: 345<br/>
 Connection: close</p>
+	</li>
 
-	<h3>Q4</h3>
-	<p>Les 3 valeurs sur la première ligne renseigne la version du protocole http qui est utilisé (1.0), le code du status de la requête http (404) et le message correspond au code du status http (Not Found).</p>
+	<li><p>A quoi correspondent les 3 valeurs sur la première ligne de l'entête ?</p>
+		<p>Les 3 valeurs sur la première ligne renseigne la version du protocole http qui est utilisé (1.0), le code du status de la requête http (404) et le message correspond au code du status http (Not Found).</p>
+	</li>
 
-	<h3>Q5</h3>
-	<p>La valeur Content-Type indique le format de la réponse, ici c'est de l'html.</p>
+	<li><p>A quoi correspond la valeur de Content-Type ?</p>
+		<p>La valeur Content-Type indique le format de la réponse, ici c'est de l'html.</p>
+	</li>
 
-	<h3>Q6</h3>
-	<p>La valeur Content-Length indique la taille du contenu de la réponse, ici 345 caractères.</p>
+	<li><p>A quoi correspond la valeur de Content-Length ?</p>
+		<p>La valeur Content-Length indique la taille du contenu de la réponse, ici 345 caractères.</p>
+	</li>
 
-	<h3>Q7</h3>
-	<p>En ajoutant un host dans la requête, l'entête de la réponse est :</p>
-	<p class="term-io">HTTP/1.1 200 OK<br/>
+	<li><p></p>
+		<p>En ajoutant un host dans la requête, l'entête de la réponse est :</p>
+		<p class="term-io">HTTP/1.1 200 OK<br/>
 Accept-Ranges: bytes<br/>
 Age: 420562<br/>
 Cache-Control: max-age=604800<br/>
@@ -184,16 +229,18 @@ Server: ECAcc (dcd/7D65)<br/>
 Vary: Accept-Encoding<br/>
 X-Cache: HIT<br/>
 Content-Length: 1256</p>
-	<p>La version d'http est la même, le code du status de la requête est cette fois 200 et correspond au status OK.</p>
-	<p>Le format de la réponse est aussi en html, mais cette fois l'encodage des caractères est précisé : UTF-8.</p>
-	<p>La taille du contenu est de 1256 caractères.</p>
+		<p>La version d'http est la même, le code du status de la requête est cette fois 200 et correspond au status OK.</p>
+		<p>Le format de la réponse est aussi en html, mais cette fois l'encodage des caractères est précisé : UTF-8.</p>
+		<p>La taille du contenu est de 1256 caractères.</p>
+	</li>
+	
+	<li><p>Pourquoi dans la version 1.1 du protocole HTTP, on doit fournir le Host ?</p>
+		<p>Spécifier le host permet aux serveurs d'héberger plusieurs sites web, la version 1.1 l'a simplement rendu obligatoire pour s'accorder avec l'expension d'internet. Il est aussi possible de spécifier l'host avec la version 0.9 mais ce n'est pas obligatoire.</p>
+	</li>
 
-	<h3>Q8 : Pourquoi dans la version 1.1 du protocole HTTP, on doit fournir le Host ?</h3>
-	<p>Spécifier le host permet aux serveurs d'héberger plusieurs sites web, la version 1.1 l'a simplement rendu obligatoire pour s'accorder avec l'expension d'internet. Il est aussi possible de spécifier l'host avec la version 0.9 mais ce n'est pas obligatoire.</p>
-
-	<h3>Q9</h3>
-	<p>L'entête pour la requête vers www.forax.org est la suivante :</p>
-	<p class="term-io">HTTP/1.1 302 Found<br/>
+	<li><p>À quoi correspond la valeur de Location ?</p>
+		<p>L'entête pour la requête vers www.forax.org est la suivante :</p>
+		<p class="term-io">HTTP/1.1 302 Found<br/>
 Date: Tue, 08 Oct 2024 15:47:39 GMT<br/>
 Content-Type: text/html<br/>
 Transfer-Encoding: chunked<br/>
@@ -201,8 +248,9 @@ Connection: keep-alive<br/>
 Location: http://www-igm.univ-mlv.fr/~forax<br/>
 Vary: Accept-Language<br/>
 CF-Cache-Status: DYNAMIC</p>
-	<p>On constate que le code de status de la requête n'est pas 200 mais 302, cela signifie que l'on a accédé à la bonne ressource mais par une redirection.</p>
-	<p>La valeur correspond à Location indique où est-ce qu'on a été redirigé.</p>
-
+		<p>On constate que le code de status de la requête n'est pas 200 mais 302, cela signifie que l'on a accédé à la bonne ressource mais par une redirection.</p>
+		<p>La valeur correspondant à Location indique où est-ce qu'on a été redirigé.</p>
+	</li>
+	</ol>
 </body>
 </html>
